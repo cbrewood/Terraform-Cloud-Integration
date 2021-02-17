@@ -35,33 +35,3 @@ resource "aviatrix_aws_tgw" "eu-west-2-tgw" {
   attached_aviatrix_transit_gateway = [
      "avx-transit-gw"
   ]
-  aws_side_as_number                = "64900"
-  manage_vpc_attachment             = true
-  manage_transit_gateway_attachment = true
-  region                            = "eu-west-2"
-  tgw_name                          = "eu-west-2-tgw"
-
-  security_domains {
-    connected_domains    = [
-      "Default_Domain",
-      "Shared_Service_Domain"
-    ]
-    security_domain_name = "Aviatrix_Edge_Domain"
-  }
-
-  security_domains {
-    connected_domains    = [
-      "Aviatrix_Edge_Domain",
-      "Shared_Service_Domain"
-    ]    
-    security_domain_name = "Default_Domain"
-  }
-
-  security_domains {
-    connected_domains    = [
-      "Aviatrix_Edge_Domain",
-      "Default_Domain"
-    ]
-    security_domain_name = "Shared_Service_Domain"
-  }
-}
