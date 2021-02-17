@@ -12,7 +12,7 @@ provider "aviatrix" {
 
 resource "aviatrix_vpc" "eu-west-2_vpc1" {
   cloud_type           = 1
-  account_name         = "devops"
+  account_name         = "AWS_Automated"
   region               = "eu-west-2"
   name                 = "eu-west-2_vpc1"
   cidr                 = "10.100.0.0/16"
@@ -22,7 +22,7 @@ resource "aviatrix_vpc" "eu-west-2_vpc1" {
 
 resource "aviatrix_vpc" "eu-west-2_vpc2" {
   cloud_type           = 1
-  account_name         = "devops"
+  account_name         = "AWS_Automated"
   region               = "eu-west-2"
   name                 = "eu-west-2_vpc2"
   cidr                 = "10.101.0.0/16"
