@@ -2,13 +2,12 @@ terraform {
   required_providers {
     aviatrix = {
       source = "AviatrixSystems/aviatrix"
-      version = "~> 3.10.0"
+      version = "UserConnect-6.3.2092"
     }
   }
 }
 
 provider "aviatrix" {
-  version = "UserConnect-6.3.2092"
 }
 
 resource "aviatrix_vpc" "eu-west-2_vpc1" {
