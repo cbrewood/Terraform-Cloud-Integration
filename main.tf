@@ -35,7 +35,7 @@ resource "aviatrix_aws_tgw" "eu-west-2-tgw" {
   attached_aviatrix_transit_gateway = [
      "avx-transit-gw"
   ]
-  aws_side_as_number                = "67000"
+  aws_side_as_number                = "64900"
   manage_vpc_attachment             = true
   manage_transit_gateway_attachment = true
   region                            = "eu-west-2"
