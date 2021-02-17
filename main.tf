@@ -35,3 +35,4 @@ resource "aviatrix_aws_tgw" "eu-west-2-tgw" {
   attached_aviatrix_transit_gateway = [
      "avx-transit-gw"
   ]
+  }
