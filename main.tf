@@ -30,4 +30,3 @@ resource "aviatrix_vpc" "eu-west-2_vpc2" {
   aviatrix_transit_vpc = false
   aviatrix_firenet_vpc = false
 }
-
