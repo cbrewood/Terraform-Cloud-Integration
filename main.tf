@@ -64,3 +64,4 @@ resource "aviatrix_aws_tgw" "eu-west-2-tgw" {
     ]
     security_domain_name = "Shared_Service_Domain"
   }
+  }
