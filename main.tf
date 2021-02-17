@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aviatrix = {
       source = "AviatrixSystems/aviatrix"
-      version = "UserConnect-6.3.2092"
+      version = "2.18.0"
     }
   }
 }
