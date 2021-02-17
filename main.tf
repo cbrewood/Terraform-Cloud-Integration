@@ -67,7 +67,7 @@ resource "aviatrix_aws_tgw" "eu-west-2-tgw" {
 
   security_domains {
     connected_domains    = [
-      "Default_Domain"
+      "Aviatrix_Edge_Domain"
     ]
     security_domain_name = "sdn1"
 
