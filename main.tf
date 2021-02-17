@@ -65,3 +65,22 @@ resource "aviatrix_aws_tgw" "eu-west-2-tgw" {
     security_domain_name = "Shared_Service_Domain"
   }
   }
+
+  security_domains {
+    connected_domains    = [
+      "Default_Domain"
+    ]
+    security_domain_name = "sdn1"
+
+    attached_vpc {
+      vpc_account_name = "AWS_Automated"
+      vpc_id           = "eu-west-2-vpc1"
+      vpc_region       = "eu-west-2"
+    }
+
+    attached_vpc {
+      vpc_account_name = "AWS_Automated"
+      vpc_id           = "eu-west-2-vpc2"
+      vpc_region       = "eu-west-2"
+    }
+  }
