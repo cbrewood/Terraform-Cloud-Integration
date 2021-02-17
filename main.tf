@@ -30,9 +30,3 @@ resource "aviatrix_vpc" "eu-west-2-vpc2" {
   aviatrix_firenet_vpc = false
 }
 
-resource "aviatrix_aws_tgw" "eu-west-2-tgw" {
-  account_name                      = "AWS_Automated"
-  attached_aviatrix_transit_gateway = [
-     "avx-transit-gw"
-  ]
-  }
