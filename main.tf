@@ -33,8 +33,8 @@ resource "aviatrix_vpc" "eu-west-2-vpc2" {
 resource "aviatrix_aws_peer" "eu-west-2-vpc1-vpc2" {
   account_name1 = "AWS_Automated"
   account_name2 = "AWS_Automated"
-  vpc_id1       = "eu-west-2-vpc1"
-  vpc_id2       = "eu-west-2-vpc2"
+  vpc_id1       = "vpc-08e361df849191cdc"
+  vpc_id2       = "vpc-08ae276504d05607c"
   vpc_reg1      = "eu-west-2"
   vpc_reg2      = "eu-west-2"
   }
