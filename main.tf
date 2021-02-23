@@ -40,6 +40,17 @@ resource "aviatrix_vpc" "eu-west-2-vpc3" {
   aviatrix_firenet_vpc = false
 }
 
+resource "aviatrix_vpc" "eu-west-2-vpc4" {
+  cloud_type           = 1
+  account_name         = "AWS_Automated"
+  region               = "eu-west-2"
+  name                 = "eu-west-2-vpc4"
+  cidr                 = "10.103.0.0/16"
+  aviatrix_transit_vpc = false
+  aviatrix_firenet_vpc = false
+}
+
+
 resource "aviatrix_aws_tgw" "eu-west-2-tgw" {
   account_name                      = "AWS_Automated"
 
